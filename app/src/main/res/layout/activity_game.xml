@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.GameActivity">
+
+    <TextView
+        android:id="@+id/wordToGuess"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="158dp"
+        android:layout_marginEnd="60dp"
+        android:text="OK" />
+
+    <TextView
+        android:id="@+id/currentTeamTextView"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toStartOf="@+id/timerTextView"
+        android:textAlignment="viewStart"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="53dp"
+        android:layout_toStartOf="@+id/okButton"
+        android:text="Score : "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginEnd="100dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="73dp"
+        android:text="START" />
+
+    <TextView
+        android:id="@+id/currentStepTextView"
+        android:layout_width="81dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/currentTeamTextView" />
+
+    <Button
+        android:id="@+id/passAwayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/currentTeamTextView"
+        android:layout_alignTop="@+id/okButton"
+        android:text="Passer" />
+
+
+</RelativeLayout>
