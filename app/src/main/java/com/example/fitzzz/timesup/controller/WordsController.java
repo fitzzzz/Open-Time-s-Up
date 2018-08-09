@@ -87,12 +87,12 @@ public class WordsController {
             "Aviron", "Triathlon", "Spéléologie", "Foot", "Basket", "Natation", "Taikwendo", "Volley Ball",
             "Lancer du marteau", "Saut en longueur", "saut en hauteur", "110 mètres haies"));
 
-    private List<Integer> pickIndice() {
+    private List<Integer> pickIndice(int numberOfWord) {
         List<Integer> pickedIndice = new ArrayList<>();
 
         Random rand = new Random();
         int randomIndice;
-        while (pickedIndice.size() < 30) {
+        while (pickedIndice.size() < numberOfWord) {
             randomIndice = rand.nextInt(this.words.size());
 
             if (!pickedIndice.contains(randomIndice)) {
@@ -103,7 +103,11 @@ public class WordsController {
     }
 
     public List<String> pickWord() {
-        List<Integer> pickedIndice = this.pickIndice();
+        return pickWord(30);
+    }
+
+    public List<String> pickWord(int numberOfWord) {
+        List<Integer> pickedIndice = this.pickIndice(numberOfWord);
 
         ArrayList<String> pickedWord = new ArrayList<>();
         for (Integer i : pickedIndice) {

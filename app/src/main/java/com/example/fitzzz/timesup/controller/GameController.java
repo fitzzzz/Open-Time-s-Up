@@ -15,10 +15,10 @@ public class GameController {
 
     private GameState gameState;
 
-    public GameController() {
+    public GameController(int numberOfWord) {
         WordsController wordsController = new WordsController();
 
-        this.usedWords = wordsController.pickWord();
+        this.usedWords = wordsController.pickWord(numberOfWord);
         this.currentStepWordList = new ArrayList<>(this.usedWords);
         this.team1 = new TeamController("Team 1");
         this.team2 = new TeamController("Team 2");

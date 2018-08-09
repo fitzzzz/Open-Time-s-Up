@@ -30,7 +30,9 @@ public class GameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
-        gameActivityContext.gameController = new GameController();
+        int numberOfWord = getIntent().getIntExtra("numberOfWord", 30);
+
+        gameActivityContext.gameController = new GameController(numberOfWord);
         gameActivityContext.wordToGuess = findViewById(R.id.wordToGuess);
         gameActivityContext.currentStepTextView = findViewById(R.id.currentStepTextView);
         gameActivityContext.scoreTextView = findViewById(R.id.scoreTextView);
