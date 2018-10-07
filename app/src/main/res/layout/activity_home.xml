@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <Button
+        android:id="@+id/startButton"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="380dp"
+        android:layout_height="182dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Start Game"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <TextView
+        android:id="@+id/numberOfWordTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Nombre de mots"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse" />
+
+    <EditText
+        android:id="@+id/numberOfWordInput"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberOfWordTxt"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/appTitleTxt"
+        android:layout_width="362dp"
+        android:layout_height="169dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.ActionBar.Title.Inverse"
+        android:textSize="80sp" />
+
+</RelativeLayout>
+
